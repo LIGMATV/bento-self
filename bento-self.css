@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    max-width: 24em;
+    margin: auto;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2.5em;
+}
+
+section:not(:target) {
+    display: none;
+}
+
+section:target {
+    display: flex;
+}
+
+section-title {
+    font-size: 1.125rem;
+    padding: 2rem 1.5rem 1.5rem;
+    font-weight: 600;
+}
+
+header {
+    padding-top: 3em;
+    margin: 0 0 2em 1.5em;
+    text-align: left;
+    max-width: 21.5em;
+}
+
+header :where(h1) {
+    margin-bottom: 8px;
+}
+
+header p {
+    margin: 0;
+    margin-bottom: 1.6em;
+    color: rgb(86 86 86 / 1);
+}
+
+header img.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #1f232826;
+}
+
+.menu {
+    padding: 0 0 1.5em 1.5em;
+}
+
+.menu a {
+    font-size: 14px;
+    background-color: #ffffff;
+    padding: .65rem .8rem;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 4px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .06), 0 2px 2px rgba(0, 0, 0, .02), 0 1.2963px 1.1713px rgba(0, 0, 0, .015), 0 .77037px .637037px rgba(0, 0, 0, .012), 0 .4px .325px rgba(0, 0, 0, .01), 0 .162963px .162963px rgba(0, 0, 0, .008), 0 .037037px .0787037px rgba(0, 0, 0, .005);
+    transition: 0.1s;
+}
+
+.menu a:active {
+    background-color: #e8e8e8;
+    box-shadow: none;
+}
+
+a[widget] :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: 400;
+}
+
+a[widget] {
+    margin-bottom: 24px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #1f232815;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .04);
+    transition: 0.1s;
+}
+
+.menu a:hover:not(:active),
+a[widget]:hover {
+    background-color: #1f232805;
+    transform: scale(0.997);
+}
+
+a[widget] .url {
+    display: block;
+    font-size: 12px;
+    margin-top: 2px;
+    color: rgb(86 86 86 / 1);
+}
+
+a[widget] .favicon {
+    display: inline-flex;
+    aspect-ratio: 1 / 1;
+    padding: 7px;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #1f232826;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+blockquote {
+    font-style: italic;
+}
+
+blockquote::before {
+	display: block;
+    font-size: 2.5em;
+    margin: -.2em 0 -.6em 0;
+	content: open-quote;
+    font-family: Georgia, Times, Garamond, serif;
+}
+
+a[widget="big"] {
+    width: 100%;
+    height: 180px;
+    padding: 24px;
+    border-radius: 1.5em;
+}
+
+a[widget="big"] .name {
+    display: block;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+a[widget="big"] .preview img {
+    margin-top: -5.5em;
+    background: #ffffff;
+    float: right;
+    border-radius: 10px;
+    aspect-ratio: 1.4;
+    height: 8em;
+    object-fit: cover;
+}
+
+a[widget="bigger"] {
+    width: 100%;
+    height: 380px;
+    padding: 24px;
+    border-radius: 1.8em;
+}
+
+a[widget="bigger"] .name {
+    display: block;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+a[widget="bigger"] .preview img {
+    margin-top: 4em;
+    background: #ffffff;
+    border-radius: 10px;
+    aspect-ratio: 1.91;
+    object-fit: cover;
+    width: 100%;
+}
+
+a[widget="medium"] {
+    width: 50%;
+    height: 180px;
+    padding: 24px;
+    border-radius: 1.5em;
+    margin-right: 22px;
+}
+
+a[widget="medium"] .name {
+    display: block;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+a[widget="wide"] {
+    width: 100%;
+    padding: 24px;
+    border-radius: 1.2em;
+}
+
+a[widget="wide"] .name {
+    font-size: 14px;
+    padding: 8px;
+}
+
+a[widget="wide"] .favicon {
+    border-radius: 7px;
+    width: 26px;
+    height: 26px;
+}
+
+a[widget]:has(img.picture) {
+    padding: 0;
+    overflow: hidden;
+}
+
+a[widget] img.picture {
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: -7px;
+    object-fit: cover;
+}
+
+group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+group a[widget="medium"]:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      transform: scale(0.88);
+      margin-top: -8em;
+    }
+}
