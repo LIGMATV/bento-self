@@ -216,7 +216,7 @@ Add ``<group>`` for every 2 medium widget.
 <group>
     <!-- [6.4] Medium widget contain picture -->
     <a widget="medium">
-        <img class="picture" src="https://www.wallpaperhub.app/_next/image?url=https%3A%2F%2Fcdn.wallpaperhub.app%2Fcloudcache%2F8%2F4%2F8%2F1%2Ff%2Fa%2F8481fab1e7084e86dfd32b72ef6f0e6ef5af4fc7.jpg&w=1366&h=768&q=100">
+        <img class="picture" src=" <!-- Link to image --> ">
     </a>
 
    <a widget="medium">
