@@ -11,7 +11,7 @@ A Link in Bio. But Rich and Beautiful. Inspired from [bento.me](https://bento.me
 <header>
 
     <!-- [1.1] Image profile -->
-    <img class="profile" src="https://api.iconify.design/simple-icons:github.svg">
+    <img class="profile" src=" <!-- Link to image --> ">
 
     <!-- [1.2] Your name -->
     <h1>Lorem ipsum</h1>
@@ -200,7 +200,7 @@ Add ``<group>`` for every 2 medium widget.
     <!-- [6.3] Centered text -->
     <a widget="medium" 
         style="text-align: center; display: flex; justify-content: center; align-items: center;">
-        <h2>Anything centered</h2>
+            <h2>Anything centered</h2>
     </a>
 
    <a widget="medium">
